@@ -9,6 +9,7 @@
 
   <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+  <script src="behavior.js"></script>
 </head>
 
 <body class="works-on-smartphone">
@@ -37,12 +38,25 @@
         por medio de mi estudio en la universidad</p>
 
       <p>Clickea en la siguiente imagen para aprender más sobre mis metas :)</p>
-      <a href="https://www.youtube.com/watch?v=QDia3e12czc"><img
-          src="https://pampermut.com/blog/wp-content/uploads/2020/04/Cuidados-para-un-gato-recien-nacido-Blog-de-Pampermut-1155x770.jpg"></a>
+      <img
+        src="https://pampermut.com/blog/wp-content/uploads/2020/04/Cuidados-para-un-gato-recien-nacido-Blog-de-Pampermut-1155x770.jpg"
+        class="small" id="smart_thumbnail">
     </article>
 
     <aside>
-      <p>Placeholder to add a comment thread later</p>
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://mariozal.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
     </aside>
   </main>
 
