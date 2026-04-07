@@ -13,6 +13,9 @@
 </head>
 
 <body class="works-on-smartphone">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v25.0&appId=APP_ID"></script>
 
   <header>
 
@@ -23,6 +26,16 @@
         <li><a href="tweets.html">Tweets</a></li>
         <li><a href="juegos.html">Juegos</a></li>
         <li><a href="noclick.html">No clickees esta opción</a></li>
+        <li>
+          <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100052766954284"
+            data-layout="" data-size=""><a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100052766954284&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore">Compartir</a></div>
+        </li>
+        <li><a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            data-show-count="false">Follow @x</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
       </ul>
     </nav>
   </header>
@@ -37,7 +50,7 @@
       <p>Dedicando tiempo, creando proyectos, y estudiando tanto por cuenta propia, como <br>
         por medio de mi estudio en la universidad</p>
 
-      <p>Clickea en la siguiente imagen para aprender más sobre mis metas :)</p>
+      <p>Clickea en la siguiente imagen para agrandarla :)</p>
       <img
         src="https://pampermut.com/blog/wp-content/uploads/2020/04/Cuidados-para-un-gato-recien-nacido-Blog-de-Pampermut-1155x770.jpg"
         class="small" id="smart_thumbnail">
@@ -46,10 +59,6 @@
     <aside>
       <div id="disqus_thread"></div>
       <script>
-        var disqus_config = function () {
-          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
         (function () { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
           s.src = 'https://mariozal.disqus.com/embed.js';

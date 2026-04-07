@@ -13,15 +13,27 @@
 </head>
 
 <body class="works-on-smartphone">
-
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v25.0&appId=APP_ID"></script>
   <header>
+    <p class="logo">Ⓜ</p>
     <nav>
-      <p class="logo">Ⓜ</p>
       <ul>
         <li><a href="index.html">Página principal</a></li>
         <li><a href="tweets.html">Tweets</a></li>
         <li><a href="juegos.html">Juegos</a></li>
         <li><a href="noclick.html">No clickees esta opción</a></li>
+        <li>
+          <div class="fb-share-button" data-href="https://www.facebook.com/profile.php?id=100052766954284"
+            data-layout="" data-size=""><a target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100052766954284&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore">Compartir</a></div>
+        </li>
+        <li><a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            data-show-count="false">Follow @x</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
       </ul>
     </nav>
   </header>
@@ -31,7 +43,15 @@
     </article>
 
     <aside>
-      <p>Placeholder to add a comment thread later</p>
+      <div id="disqus_thread"></div>
+      <script>
+        (function () { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://mariozal.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
     </aside>
   </main>
 
